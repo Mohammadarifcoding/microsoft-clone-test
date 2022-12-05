@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="micro.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Microsoft – Cloud, Computers, Apps & Gaming</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+                @media screen and (max-width:768px){
+    .features{
+       display: none;
+    }   
+ 
+  
+}
+@media screen and (min-width:769px) {
+    .features{
+       display: block;
+    }
+    .slider .right{
+        float: right;
+        width: 50%;
+    }
+    .slider .left{
+        float: left;
+        width:50%;
+    }
+    .promo{
+        margin-left:18vw;
+        margin-right:18vw;   
+    }
+    .cart{
+        margin-left:4vw;
+        margin-right:4vw;
+    }
+}
+.navbar{
+    background-color: #FFFFFF;
+}
+.slider{
+    background-color: #F2F2F4;
+}
+.img{
+    width: 80px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.product img{
+    width:100%;
+}
+.product h3{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.3rem;
+}
+.product h4{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.1rem;
+    color: #950C44; 
+}
+            }
+    </style>
+</head>
+<body>
+    <div class="pb-16">
+        <div class="navbar flex justify-between items-center p-4 ">
+            <div class="flex justify-center items-center md:order-2">
+                <div class="hamburger inline-block mr-4 mt-0.5 cursor-pointer md:hidden ">
+                    <div class="line h-0.5 w-5 my-1 bg-black "></div>
+                    <div class="line h-0.5 w-5 my-1 bg-black"></div> 
+                    <div class="line h-0.5 w-5 my-1 bg-black"></div>
+                 </div>
+                 <div class="search md:hidden"><img class="w-5 frouth-one" src="search-removebg-preview (1).png" alt=""></div>
+            </div>
+         
+        <div class="logo text-center md:order-1 flex">
+           <div class="mt-1"><img class="img" src="microsoft.png" alt=""></div> 
+            <div class="features md:flex  mx-4 space-x-2 ">
+                <div class="fitem">Microsoft 365</div>
+                <div class="fitem">Office</div>
+                <div class="fitem">Windows</div>
+                <div class="fitem">Surface</div>
+                <div class="fitem">About</div>
+                <div class="fitem">Support</div>
+            </div>
+    
+        </div>
+        <div class="cart text-center md:order-3 flex ">
+            <div class="search hidden  md:flex"> All Microsoft <span class="search "><img class="w-5 thrid-one" src="search-removebg-preview (1).png" alt=""></span></div>
+            <div class="icon ">
+                <img class="w-5 first-one" src="cart-removebg-preview.png" alt="">
+                <img class="w-5 second-one" src="account-removebg-preview.png" alt="">
+            </div>
+            
+        </div>
+        
+        </div>
+         <div class="slider flex flex-col-reverse md:flex-row mx-2">
+            <div class="right justify-center items-center text-center py-20 md:order-2 md:px-5">
+                <h1 class="text-2xl text-center">Save on select Surface</h1>
+                <p class="text-center "> powered by 12th Gen Intel® Core™ i5/i7</p>
+                <button class="text-white bg-black hover:bg-slate-700 font-bold px-4 py-2 my-6 rounded-md">Shop Now</button>
+             </div>
+         <div class="left md:order-1">
+            <img src="laptop.jpg" alt="">
+         </div>
+        
+         </div>
+    
+         <div class="promo grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-4 space-y-6 mt-6">
+            <div class="item flex flex-col mx-4 lg:justify-center items-center mt-6 space-x-2">
+                <img src="icon.webp" alt="">
+                <span class="font-medium text-center">Choose your Microsoft 365</span>
+            </div>
+            <div class="item flex flex-col  mx-4 lg:justify-center items-center space-x-2">
+                <img src="icon2.webp" alt="">
+                <span class="font-medium text-center ">Buy Xbox games and consoles</span>
+            </div>
+            <div class="item flex  flex-col mx-4 lg:justify-center  items-center  space-x-2">
+                <img src="icon3.webp" alt="">
+                <span class="font-medium text-center ">Shop for accessories</span>
+            </div>
+            <div class="item flex flex-col  mx-4 lg:justify-center  items-center  space-x-2">
+                <img src="icon4.webp" alt="">
+                <span class="font-medium  text-center ">Shop Business</span>
+            </div>
+         </div>
+         <div class="cart grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-10 ">
+            <div class="product mx-4 sm:mx-2 mt-5">
+                <img src="product.jfif" alt="">
+                <h3 class="font-medium pt-4">Save up to $200 on Surface Pro 9</h3>
+                <p class="pt-1">Keep spirits bright with a game-changing combo of laptop power and tablet flexibility—all in one ultra-portable device. Offer ends 12/11.</p>
+                <h4 class="mt-6 font-medium">Shop Surface Pro 9 ></h4>
+            </div>
+            <div class="product mx-4  sm:mx-2 mt-5">
+                <img src="product2.webp" alt="">
+                <h3 class="font-medium pt-4">Up to $300 off Surface Laptop 5</h3>
+                <p class="pt-1">Sophisticated style and multitasking speed powered by 12th Gen Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform make this the perfect gift. Offer ends 12/11.</p>
+                <h4 class="mt-6 font-medium">Shop Surface Laptop 5 ></h4>
+            </div>
+            <div class="product mx-4  sm:mx-2  mt-5">
+                <img src="product3.jfif" alt="">
+                <h3 class="font-medium pt-4">$60 off Xbox Series S</h3>
+                <p class="pt-1">Score savings on the smallest, sleekest Xbox yet. Only $239.99, while supplies last. Offer ends 12/31</p>
+                <h4 class="mt-6 font-medium">Shop Xbox Series S ></h4>
+            </div>
+            <div class="product  mx-4 sm:mx-2 mt-5">
+                <img src="product4.jfif" alt="">
+                <h3 class="font-medium pt-4">Xbox Series X</h3>
+                <p class="pt-1">Give thrills that’ll last all year with the fastest, most powerful Xbox ever.</p>
+                <h4 class="mt-6 font-medium">Shop Xbox Series X ></h4>
+            </div>
+         </div>
+     </div>
+</body>
+</html>
